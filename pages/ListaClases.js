@@ -1,10 +1,10 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import Link from 'next/Link' 
+import Head from 'next/head'
 
-export default function Home() {
+function ListaClases() {
   return (
-    <div className={styles.container}>
+    
+    <div>
       <Head>
         <title>BestCycling</title>
         <meta name="description" content="Proyecto para la empresa BestCycling" />
@@ -15,13 +15,15 @@ export default function Home() {
         <header className='cabecera'>
           <nav>
             <h1 className='logo'>
-              <Link href='/ListaClases'>
+              <Link href='/'>
                 <img src='/logo.png' width='200px'/>
               </Link>
             </h1>
           </nav>
         </header>
       </main>
-    </div>
+  </div>
   )
 }
+
+export default ListaClases
